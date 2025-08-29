@@ -1,8 +1,9 @@
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import React, { useRef, useState } from 'react'
+import { Link } from 'react-scroll';
 
-function Navbar() {
+function Navbar({navsList}) {
 
     // -------------------------- Refrences -------------------------- //
     const refNav = useRef(null);
@@ -15,9 +16,6 @@ function Navbar() {
 
 
     // -------------------------- Variables & States -------------------------- //
-    const navsList = [
-        'home', 'services', 'about', 'works', 'contact'
-    ]
     const socialList = [
         { title: 'E-mail', link: 'mailto: ali.nabizadeh79@yahoo.com' },
         { title: 'GitHub', link: 'https://github.com/aliNzLami'},
@@ -87,10 +85,17 @@ function Navbar() {
                     {
                         navsList.map((item, index) => {
                             return(
-                                <div key={item} ref={(element) => (refLinks.current[index] = element)}>
-                                    <a href="" className='transition-all duration-300 cursor-pointer hover:text-white'>
-                                        { item }
-                                    </a>
+                                <div key={item.title} ref={(element) => (refLinks.current[index] = element)}>
+                                    <Link 
+                                        to={item.title} 
+                                        className='transition-all duration-300 cursor-pointer hover:text-white'
+                                        offset={0}
+                                        smooth
+                                        duration={1300}
+                                        onClick={toggleMenu}
+                                    >
+                                        { item.title }
+                                    </Link>
                                 </div>
                             )
                         })
