@@ -63,7 +63,7 @@ function Navbar({navsList}) {
                 ease: "power2.inOut"
             })
         }
-    })
+    }, [])
 
     // -------------------------- Functions -------------------------- //
     const toggleMenu = () => {
@@ -106,7 +106,7 @@ function Navbar({navsList}) {
                     {
                         socialList.map(item => {
                             return(
-                                <div className="font-light mt-3">
+                                <div key={item.title} className="font-light mt-3">
                                     <a href={item.link} className='tracking-wider text-white/50'>
                                         { item.title }
                                     </a>

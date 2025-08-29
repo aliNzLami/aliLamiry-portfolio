@@ -12,8 +12,8 @@ import Home from './assets/components/Home';
 function App() {
     const navsList = [
         { title: 'home', component: <Home /> },
-        { title: 'about', component: <About /> },
-        { title: 'works', component: <Works /> },
+        // { title: 'about', component: <About /> },
+        // { title: 'works', component: <Works /> },
         // { title: 'contact', component: <Works /> },
       ]
     
