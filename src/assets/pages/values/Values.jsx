@@ -20,7 +20,7 @@ function Values() {
     }, [])
 
     return (
-        <div ref={containerRef} className='min-h-screen flex flex-col items-center justify-between gap-12 mt-16'>
+        <div ref={containerRef} className='min-h-screen flex flex-col items-center justify-between gap-12 mt-16 valuesBg'>
             <ValuesItems items={[
                 'Trust',
                 'Reselience',

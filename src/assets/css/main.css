@@ -241,6 +241,10 @@
     border-left: 5px solid #d3a802;
   }
 
+  .valuesBg {
+    background: #e5e5e0;
+  }
+
 /* ------------------------------- FONTS ------------------------------- */
 
   .banner-text-responsive {
