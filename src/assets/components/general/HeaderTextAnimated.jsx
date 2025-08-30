@@ -3,25 +3,27 @@ import AnimatedTextLines from './AnimatedTextLines';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 
-function HeaderTextAnimated({description, header, subHeader, color, hasScroll = false}) {
+function HeaderTextAnimated({description, header, subHeader, color, hasScroll = false, duration = 4}) {
     const contextRef = useRef(null);
     const headerRef = useRef(null);
 
     useGSAP(() => {
         const tl = gsap.timeline({
           scrollTrigger: hasScroll ? {
-            trigger: contextRef.current
+            trigger: contextRef.current,
+            start: 'top bottom',
+            toggleActions: "play none none reverse", 
           } : undefined
         });
         tl.from(contextRef.current, {
           y: '50vh',
-          duration: 4,
+          duration: duration,
           ease: 'circ.out'
         })
         tl.from(headerRef.current, {
           opacity: 0,
           y: '20%',
-          duration: 4,
+          duration: duration,
           ease: 'circ.out' 
         }, '<+0.2')
     }, [])

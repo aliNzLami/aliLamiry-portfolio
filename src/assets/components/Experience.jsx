@@ -3,13 +3,11 @@ import HeaderTextAnimated from './general/HeaderTextAnimated'
 import { workExperience } from '../context/workExperience'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
-import { ScrollTrigger } from 'gsap/all'
-gsap.registerPlugin(ScrollTrigger)
+import AnimatedTextLines from './general/AnimatedTextLines'
 
 function Experience() {
 
     const experiencesRef = useRef([]);
-    const experienceItemsRef = useRef([]);
 
     useGSAP(() => {
         if(experiencesRef.current.length) {
@@ -30,13 +28,14 @@ function Experience() {
     }, [])
 
     return (
-        <div className='min-h-screen bg-black rounded-t-4xl'>
+        <div className='min-h-screen bg-black rounded-4xl mt-80 md:mt-50'>
             <HeaderTextAnimated
-                description={"Let's talk about my path, from the first."}
-                header={'Experiences'}
                 subHeader={'My Journey'}
+                header={'Experiences'}
+                description={"Let's talk about my path, from the first."}
                 color={'text-white'}
                 hasScroll={true}
+                duration={1}
             />
             
             <div className='mt-10'>
@@ -61,16 +60,16 @@ function Experience() {
                                         <h3 className='text-center md:text-start pt-0 text-xl md:text-2xl lg:text-3xl'>
                                             { item.company }
                                         </h3>
-                                        <p className='' ref={(element) => experienceItemsRef.current[index] = element}>
+                                        <p>
                                             {
                                                 item.experiences.map((work, workIndex) => {
                                                     return(
-                                                        <span 
-                                                            key={workIndex} 
-                                                            className='text-xl leading-relaxed tracking-widest lg:text-2xl text-white/60 text-pretty block my-5'
-                                                        >
-                                                            { work }
-                                                        </span>
+                                                        <div key={workIndex} >
+                                                            <AnimatedTextLines 
+                                                                text={ work }
+                                                                className='text-xl leading-relaxed tracking-widest lg:text-2xl text-white/60 text-pretty block my-5'
+                                                            />
+                                                        </div>
                                                     )
                                                 })
                                             }

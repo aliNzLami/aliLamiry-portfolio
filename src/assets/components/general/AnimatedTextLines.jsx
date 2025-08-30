@@ -1,8 +1,6 @@
 import React, { useRef } from 'react'
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/all';
-gsap.registerPlugin(ScrollTrigger)
 
 function AnimatedTextLines({ text, className }) {
 
@@ -12,17 +10,20 @@ function AnimatedTextLines({ text, className }) {
 
     useGSAP(() => {
         if(linesRef.current.length) {
-            gsap.from(linesRef.current, {
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                  trigger: linesRef.current,
+                  start: 'top bottom',
+                  toggleActions: "play none none reverse", 
+                } 
+              });
+              tl.from(linesRef.current, {
                 y: 100,
                 opacity: 0,
-                duration: 0.8,
+                duration: 1,
                 stagger: 0.3,
-                ease: 'back.out',
-                scrollTrigger: {
-                    target: containerRef.current,
-                    scrub: true
-                }
-            })
+                ease: "back.out",
+              })
         }
     }, [])
 
