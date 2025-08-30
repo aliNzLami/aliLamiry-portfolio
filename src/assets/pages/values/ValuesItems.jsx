@@ -166,7 +166,7 @@ function ValuesItems({
                 {
                     items.map((text, index) => {
                         return (
-                            <span ref={(element) => itemsRef.current[index] = element} className='flex items-center px-16 gap-x-32' key={text}>
+                            <span ref={(element) => itemsRef.current[index] = element} className='flex items-center px-16 gap-x-32' key={index}>
                                 <span>
                                     { text }
                                 </span>

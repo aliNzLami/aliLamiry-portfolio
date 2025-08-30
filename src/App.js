@@ -1,6 +1,9 @@
 import React from 'react';
-
 import ReactLenis from 'lenis/react';
+
+// three
+import { useProgress } from '@react-three/drei';
+
 // css
 import './assets/css/main.css';
 
@@ -22,7 +25,9 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 gsap.registerPlugin(ScrollTrigger)
 
+
 function App() {
+    const { progress } = useProgress();
     const navsList = [
         { title: 'home', component: <Home /> },
         { title: 'services', component: <Services /> },
@@ -33,20 +38,38 @@ function App() {
         { title: 'values', component: <Values /> },
         { title: 'contact', component: <Contact /> },
     ]
+
+    console.log(progress === 100);
     
+
     return (
       <>
         <ReactLenis root className='relative w-screen min-h-screen'>
-          <Navbar navsList={navsList} />
-          {
-            navsList.map(item => {
-              return (
-                <section key={item.title} id={item.title}>
-                  { item.component }
-                </section>
-              )
-            })
-          }
+
+          <div className={`${progress === 100 ? 'hidden' : 'flex' } fixed inset-8 z-[999] flex-col items-center justify-center bg-black text-white transition-opacity duration-700 font-light w-full h-full top-[0] left-[0]`}>
+            <p className='mb-4 text-xl tracking-wildest animate-pulse font-normal'>
+              Loading {Math.floor(progress)}%
+            </p>
+            
+            <div className='relative h-1 overflow-hidden rounded w-68 bg-white/20'>
+              <div className={`absolute top-0 left-0 h-full transition-all duration-300 bg-white w-[${progress}%]`}>
+
+              </div>
+            </div>
+          </div>
+
+          <div className={`${progress === 100 ? 'opacity-100' : 'opacity-0' }`}>
+            <Navbar navsList={navsList} />
+            {
+              navsList.map(item => {
+                return (
+                  <section key={item.title} id={item.title}>
+                    { item.component }
+                  </section>
+                )
+              })
+            }
+          </div>
         </ReactLenis>
       </>
     )
