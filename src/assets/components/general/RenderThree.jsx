@@ -26,15 +26,15 @@ function Three_GLB({ glbFile }) {
 }
 
 function RenderThree({ glb }) {
-  const camera = { position: [-12, 5, 8], fov: 35 };
+  const camera = { position: [6, 1.5, 1], fov: 35 };
 
   return (
     <Canvas shadows camera={camera}>
-      <ambientLight intensity={0.9} />
+      <ambientLight intensity={0.5} />
       <directionalLight position={[0, 0, 0]} intensity={0.1} />
       <Suspense fallback={null}>
         <Three_GLB glbFile={glb} />
-        <Environment preset='sunset' />
+        <Environment preset='night' />   {/* apartment, city, dawn, forest, lobby, night, park, studio, sunset, warehouse */}
       </Suspense>
       <OrbitControls />
     </Canvas>

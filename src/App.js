@@ -8,10 +8,12 @@ import Navbar from './assets/components/Navbar';
 import Works from './assets/components/Works';
 import About from './assets/components/About';
 import Home from './assets/components/Home';
+import Services from './assets/components/Services';
 
 function App() {
     const navsList = [
         { title: 'home', component: <Home /> },
+        { title: 'services', component: <Services /> },
         // { title: 'about', component: <About /> },
         // { title: 'works', component: <Works /> },
         // { title: 'contact', component: <Works /> },
