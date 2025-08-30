@@ -53,10 +53,10 @@ function Values() {
             </p>
 
             <ValuesItems 
-                items={['contact me', 'contact me', 'contact me', 'contact me', 'contact me', 'contact me',]}
+                items={['contact me', 'contact me', 'contact me', 'contact me', 'contact me']}
                 reverse={true}
                 className='text-black bg-transparent border-y-2'
-                iconClassName='bg-gold stroke-1 text-transparent'
+                iconClassName='bg-gold stroke-1 text-transparent block'
                 icon='material-symbols-light:square' 
             />
         </div>
