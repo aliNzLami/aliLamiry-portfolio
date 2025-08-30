@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/aliLamiry-portfolio/static/css/main.b824620e.css",
-    "main.js": "/aliLamiry-portfolio/static/js/main.0ffb8f02.js",
+    "main.js": "/aliLamiry-portfolio/static/js/main.da4f4bd6.js",
     "static/js/453.5d79306b.chunk.js": "/aliLamiry-portfolio/static/js/453.5d79306b.chunk.js",
     "static/media/me.png": "/aliLamiry-portfolio/static/media/me.dfb63ae1bf9d02984c0d.png",
     "static/media/Amiamie-BlackItalicRound.ttf": "/aliLamiry-portfolio/static/media/Amiamie-BlackItalicRound.778aacac4c840bf55413.ttf",
@@ -30,11 +30,11 @@
     "static/media/dash_mobile.webp": "/aliLamiry-portfolio/static/media/dash_mobile.76a0edfd2dab05de98f9.webp",
     "index.html": "/aliLamiry-portfolio/index.html",
     "main.b824620e.css.map": "/aliLamiry-portfolio/static/css/main.b824620e.css.map",
-    "main.0ffb8f02.js.map": "/aliLamiry-portfolio/static/js/main.0ffb8f02.js.map",
+    "main.da4f4bd6.js.map": "/aliLamiry-portfolio/static/js/main.da4f4bd6.js.map",
     "453.5d79306b.chunk.js.map": "/aliLamiry-portfolio/static/js/453.5d79306b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b824620e.css",
-    "static/js/main.0ffb8f02.js"
+    "static/js/main.da4f4bd6.js"
   ]
 }
