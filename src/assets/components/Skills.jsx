@@ -38,7 +38,7 @@ function Skills({}) {
                 duration={1}
             />
 
-            <div className="flex justify-center items-center md:mt-10 relative">
+            <div className="flex justify-center items-center mb-30 md:mt-10 w-full h-[600px] md:h-[500px] relative">
                 {
                     items.map((item, index) => {
                         return(

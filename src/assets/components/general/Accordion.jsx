@@ -1,22 +1,36 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 function Accordion({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [height, setHeight] = useState("0px");
+  const contentRef = useRef(null);
 
   const toggle = () => {
     setIsOpen(!isOpen);
   };
 
+  useEffect(() => {
+    if (contentRef.current) {
+      if (isOpen) {
+        // Measure the content height for smooth transition
+        const scrollHeight = contentRef.current.scrollHeight;
+        setHeight(`${scrollHeight}px`);
+      } else {
+        setHeight("0px");
+      }
+    }
+  }, [isOpen, children]);
+
   return (
-    <div className="border border-gray-300 rounded-md mb-4 overflow-hidden">
+    <div className="border border-gray-300 shadow-lg rounded-md mb-4 overflow-hidden">
       {/* Header */}
       <button
         onClick={toggle}
-        className="w-full flex justify-between items-center px-4 py-3 bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+        className="w-full flex justify-between items-center px-4 py-3 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-black transition cursor-pointer"
         aria-expanded={isOpen}
         aria-controls="accordion-content"
       >
-        <span className="font-medium text-gray-800">{title}</span>
+        <span className="text-black lg:text-[32px] text-[26px] leading-none">{title}</span>
         {/* Icon indicating open/close state */}
         <svg
           className={`w-5 h-5 transform transition-transform duration-300 ${
@@ -30,18 +44,20 @@ function Accordion({ title, children }) {
         </svg>
       </button>
 
-      {/* Content */}
+      {/* Content with smooth transition */}
       <div
         id="accordion-content"
-        className={`overflow-hidden transition-all duration-500 ease-in-out`}
+        className="overflow-hidden transition-all duration-500 ease-in-out"
         style={{
-          maxHeight: isOpen ? "1000px" : "0px",
+          maxHeight: height,
         }}
       >
-        <div className="px-4 py-3 bg-white">{children}</div>
+        <div className="px-4 py-10 bg-white/40" ref={contentRef}>
+          {children}
+        </div>
       </div>
     </div>
   );
 }
 
-export default Accordion
+export default Accordion;

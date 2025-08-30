@@ -20,7 +20,7 @@ function App() {
         { title: 'about', component: <About /> },
         { title: 'skills', component: <Skills /> },
         { title: 'experiences', component: <Experience /> },
-        // { title: 'works', component: <Works /> },
+        { title: 'works', component: <Works /> },
         // { title: 'contact', component: <Works /> },
       ]
     

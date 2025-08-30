@@ -28,7 +28,7 @@ function Experience() {
     }, [])
 
     return (
-        <div className='min-h-screen bg-black rounded-4xl mt-80 md:mt-50'>
+        <div className='min-h-screen bg-black rounded-4xl experienceMarginTop'>
             <HeaderTextAnimated
                 subHeader={'My Journey'}
                 header={'Experiences'}

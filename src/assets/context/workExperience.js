@@ -23,7 +23,7 @@ export const workExperience = [
             "▪ Enhanced financial data clarity by 70% based on user feedback, through advanced data visualization with Chart.js, leading to better user comprehension.",
             "▪ Elevated 30% project onboarding and setup time by automating documentation updates with Git Hooks.",
             "▪ Enabled non-technical teams to assemble dashboards 80% faster and minimized development time from 60 to 20 days, by architecting a micro-frontend ecosystem using Webpack Module Federation, Git submodules, and Docker.",
-            "▪ Achieved nearly a 15% growth in sign-up conversions by collaboratively optimizing user flows and conducting A/B testing within our Agile team framework. Additionally, our collective efforts in Agile sprints lessened bug resolution time by 25%, upgraded overall product stability and deployment efficiency"
+            "▪ Achieved nearly a 15% growth in sign-up conversions by collaboratively optimizing user flows and conducting A/B testing within our Agile team framework. Additionally, our collective efforts in Agile sprints lessened bug resolution time by 25%, upgraded overall product stability and deployment efficiency."
         ]
     }
 ]
