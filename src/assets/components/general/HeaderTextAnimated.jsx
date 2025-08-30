@@ -3,7 +3,7 @@ import AnimatedTextLines from './AnimatedTextLines';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 
-function HeaderTextAnimated({description, header, subHeader, color, hasScroll = false, duration = 4}) {
+function HeaderTextAnimated({description, header, subHeader, color, hasScroll = false, subHeaderClassName = "", duration = 4}) {
     const contextRef = useRef(null);
     const headerRef = useRef(null);
 
@@ -32,7 +32,7 @@ function HeaderTextAnimated({description, header, subHeader, color, hasScroll = 
         <div ref={contextRef}>
             <div> {/* style polygon */}
                 <div ref={headerRef} className='flex flex-col justify-center gap-12 pt-10 sm:gap-16'>
-                  <p className={`text-sm font-light tracking-[0.5rem] uppercase px-10 ${color}`}>
+                  <p className={`text-sm font-light tracking-[0.5rem] uppercase px-10 ${color} ${subHeaderClassName}`}>
                     { subHeader }
                   </p>
                   <div className="px-10">

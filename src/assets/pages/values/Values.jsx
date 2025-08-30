@@ -29,7 +29,7 @@ function Values() {
                 'Identity'
             ]} />
 
-            <p className='text-center text-5xl'>
+            <p className='text-center text-3xl md:text-5xl'>
                 <span className='block mb-8'>
                     ❞ Let's build a
                 </span>
@@ -53,7 +53,7 @@ function Values() {
             </p>
 
             <ValuesItems 
-                items={['contact us', 'contact us', 'contact us', 'contact us', 'contact us', 'contact us',]}
+                items={['contact me', 'contact me', 'contact me', 'contact me', 'contact me', 'contact me',]}
                 reverse={true}
                 className='text-black bg-transparent border-y-2'
                 iconClassName='bg-gold stroke-1 text-transparent'

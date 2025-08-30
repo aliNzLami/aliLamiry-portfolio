@@ -237,6 +237,10 @@
     }
   }
 
+  .borderNavbar {
+    border-left: 5px solid #d3a802;
+  }
+
 /* ------------------------------- FONTS ------------------------------- */
 
   .banner-text-responsive {

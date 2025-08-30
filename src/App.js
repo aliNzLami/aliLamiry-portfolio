@@ -15,6 +15,7 @@ import Skills from './assets/pages/skills/Skills';
 import Experience from './assets/pages/experiences/Experience';
 import Works from './assets/pages/works/Works';
 import Values from './assets/pages/values/Values';
+import Contact from './assets/pages/contact/Contact';
 
 // gsap
 import gsap from 'gsap';
@@ -30,6 +31,7 @@ function App() {
         { title: 'experiences', component: <Experience /> },
         { title: 'works', component: <Works /> },
         { title: 'values', component: <Values /> },
+        { title: 'contact', component: <Contact /> },
     ]
     
     return (
