@@ -4,10 +4,10 @@ import HeaderTextAnimated from '../../components/general/HeaderTextAnimated';
 
 function Home() {
 
-    const whatIDo = `I transfer experiences towards the user by building interfaces. 
-    My job is turn complexcity to simplicity. 
-    No matter how much the data structures and APIs are complicated, 
-    I make comfort and easiness for the users.`
+    const whatIDo = `I transfer good experiences to the user by building interfaces. 
+    My job is to turn complexity into simplicity. 
+    No matter how complicated the data structures and APIs are, 
+    I make comfort and ease for the users.`
 
     return (
         <>

@@ -19,11 +19,11 @@ function About() {
     const aboutRef = useRef(null);
 
   // ---------------------- Variables ---------------------- //
-    const aboutMe = `Since I was a kid, I have alwayed loved computer graphics, digital arts, and simulations. 
-    I started my journey in tech with my bachelor's degree in FinTech major. I always knew I love tech, but here, I have just ensured myself.
-    After carefully research, I understood that frontend development was the major where every aspects of my passions are connected together. And, it was true!
-    I went to Tehran Institute of Technology. From HTML and CSS, to JavaScript and React.js. We were taught through real-time projects.
-    Then, one year later, a startup company in software engineering hired me as a frontend developer. I delivered a veriety of products, including e-commerce, dashboards, landing pages, and custom software architectures.`;
+    const aboutMe = `Since a young age, I have been passionate about computer graphics, digital arts, and simulations. I earned a bachelor's in FinTech, which solidified my love for technology. 
+    I discovered that frontend development combines my passions for creativity, design, and tech. 
+    At Tehran Institute of Technology, I gained hands-on experience with HTML, CSS, JavaScript, and React.js through real projects.
+    Afterward, I worked as a frontend developer at a startup via a cross-functional Agile team, contributing to e-commerce sites, dashboards, landing pages, and custom software architectures.
+    I'm eager to create innovative digital experiences and simplify the complexity for the clients.`;
 
   // ---------------------- Animations ---------------------- //
     useGSAP(() => {
@@ -66,7 +66,7 @@ function About() {
               duration={1}
           />
 
-          <div className="flex flex-col items-center justify-between gap-16 px-18 pb-16 text-xl font-light tracking-wide lg:flex-row md:text-2xl lg:text-3xl text-white/60">
+          <div className="flex flex-row items-center justify-between gap-16 px-18 pb-16 text-xl font-light tracking-wide md:text-2xl lg:text-3xl text-white/60 aboutBody">
             <img className='w-md rounded-3xl' src={pic} alt="portfolio pic" ref={picRef} />
             <AnimatedTextLines 
               text={aboutMe}

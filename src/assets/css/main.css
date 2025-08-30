@@ -196,6 +196,10 @@
     color: #d3a802;
   }
 
+  .text-transparent {
+    color: #e5e5e0;
+  }
+
   .overflowExperience {
     overflow-y: scroll !important;
   }
@@ -225,6 +229,12 @@
 
   .imgWorks {
     border: 3px solid #000;
+  }
+
+  @media (max-width: 1400px) {
+    .aboutBody {
+      flex-direction: column;
+    }
   }
 
 /* ------------------------------- FONTS ------------------------------- */

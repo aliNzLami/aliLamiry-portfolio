@@ -1,4 +1,5 @@
 import React from 'react';
+
 import ReactLenis from 'lenis/react';
 // css
 import './assets/css/main.css';
@@ -6,13 +7,16 @@ import './assets/css/main.css';
 // components
 import Navbar from './assets/components/Navbar';
 
+// pages
 import Home from './assets/pages/home/Home';
 import Services from './assets/pages/services/Services';
 import About from './assets/pages/about/About';
 import Skills from './assets/pages/skills/Skills';
 import Experience from './assets/pages/experiences/Experience';
 import Works from './assets/pages/works/Works';
+import Values from './assets/pages/values/Values';
 
+// gsap
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 gsap.registerPlugin(ScrollTrigger)
@@ -25,6 +29,7 @@ function App() {
         { title: 'skills', component: <Skills /> },
         { title: 'experiences', component: <Experience /> },
         { title: 'works', component: <Works /> },
+        { title: 'values', component: <Values /> },
     ]
     
     return (

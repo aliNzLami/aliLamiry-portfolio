@@ -17,7 +17,7 @@ function Works() {
             <HeaderTextAnimated
                 subHeader={'Personal Projects'}
                 header={'Works'}
-                description={"Each skills and experiences need proof."}
+                description={"Each skill and experience needs proof."}
                 color={'text-black'}
                 hasScroll={true}
                 duration={1}
