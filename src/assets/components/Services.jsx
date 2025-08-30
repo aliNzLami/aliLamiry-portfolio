@@ -25,7 +25,7 @@ function Services() {
 
     if(title2_ref.current) {
       gsap.to(title2_ref.current, {
-        xPercent: -18,
+        xPercent: -10,
         scrollTrigger: {
           target: title2_ref.current,
           scrub: true

@@ -9,18 +9,23 @@ import Works from './assets/components/Works';
 import About from './assets/components/About';
 import Home from './assets/components/Home';
 import Services from './assets/components/Services';
+import Experience from './assets/components/Experience';
+import ReactLenis from 'lenis/react';
 
 function App() {
     const navsList = [
         { title: 'home', component: <Home /> },
         { title: 'services', component: <Services /> },
+        { title: 'experiences', component: <Experience /> },
         // { title: 'about', component: <About /> },
         // { title: 'works', component: <Works /> },
         // { title: 'contact', component: <Works /> },
       ]
     
     return (
-      <div className='relative w-screen min-h-screen'>
+      <>
+      
+      <ReactLenis className='relative w-screen min-h-screen'>
         <Navbar navsList={navsList} />
 
         {
@@ -32,7 +37,8 @@ function App() {
             )
           })
         }
-      </div>
+      </ReactLenis>
+      </>
     )
 }
 
