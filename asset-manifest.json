@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/aliLamiry-portfolio/static/css/main.416586ac.css",
+    "main.js": "/aliLamiry-portfolio/static/js/main.0db5d1e5.js",
+    "static/js/453.5d79306b.chunk.js": "/aliLamiry-portfolio/static/js/453.5d79306b.chunk.js",
+    "static/media/me.png": "/aliLamiry-portfolio/static/media/me.dfb63ae1bf9d02984c0d.png",
+    "static/media/Amiamie-BlackItalicRound.ttf": "/aliLamiry-portfolio/static/media/Amiamie-BlackItalicRound.778aacac4c840bf55413.ttf",
+    "static/media/Amiamie-BlackRound.ttf": "/aliLamiry-portfolio/static/media/Amiamie-BlackRound.62ed48b730626fdd14d1.ttf",
+    "static/media/Amiamie-RegularRound.ttf": "/aliLamiry-portfolio/static/media/Amiamie-RegularRound.377abd675d0ebd82a581.ttf",
+    "static/media/shop.webp": "/aliLamiry-portfolio/static/media/shop.6c17cfc5b3a0c78cab47.webp",
+    "static/media/Amiamie-BlackItalic.ttf": "/aliLamiry-portfolio/static/media/Amiamie-BlackItalic.2dcd744728e0cd67cf6b.ttf",
+    "static/media/Amiamie-Italic.ttf": "/aliLamiry-portfolio/static/media/Amiamie-Italic.658b86709e6a84dac789.ttf",
+    "static/media/Amiamie-Black.ttf": "/aliLamiry-portfolio/static/media/Amiamie-Black.ac415c1e00e1407596b4.ttf",
+    "static/media/Amiamie-LightItalic.ttf": "/aliLamiry-portfolio/static/media/Amiamie-LightItalic.97ec7df076d531a7ade0.ttf",
+    "static/media/Amiamie-Regular.ttf": "/aliLamiry-portfolio/static/media/Amiamie-Regular.d2c5614a013de44fead4.ttf",
+    "static/media/Amiamie-Light.ttf": "/aliLamiry-portfolio/static/media/Amiamie-Light.0331481efa3c56877c15.ttf",
+    "static/media/note.webp": "/aliLamiry-portfolio/static/media/note.7060bec67bc4c6902718.webp",
+    "static/media/Amiamie-BlackItalicRound.otf": "/aliLamiry-portfolio/static/media/Amiamie-BlackItalicRound.7a7a4ef6aabbbd754387.otf",
+    "static/media/Amiamie-BlackRound.otf": "/aliLamiry-portfolio/static/media/Amiamie-BlackRound.c6624ca22ff54cab074a.otf",
+    "static/media/Amiamie-RegularRound.otf": "/aliLamiry-portfolio/static/media/Amiamie-RegularRound.05b6911fd5a9d5d7dcd6.otf",
+    "static/media/note_mobile.webp": "/aliLamiry-portfolio/static/media/note_mobile.210647446cb33078650c.webp",
+    "static/media/dashboard.webp": "/aliLamiry-portfolio/static/media/dashboard.895464e64bea1593a8f6.webp",
+    "static/media/Amiamie-Black.otf": "/aliLamiry-portfolio/static/media/Amiamie-Black.b6ba07965142c181bdc2.otf",
+    "static/media/Amiamie-BlackItalic.otf": "/aliLamiry-portfolio/static/media/Amiamie-BlackItalic.de1204142f4abcad2458.otf",
+    "static/media/Amiamie-Regular.otf": "/aliLamiry-portfolio/static/media/Amiamie-Regular.19b48ae6d0037bb1857c.otf",
+    "static/media/Amiamie-LightItalic.otf": "/aliLamiry-portfolio/static/media/Amiamie-LightItalic.feb0fef4eaff65e5654d.otf",
+    "static/media/Amiamie-Light.otf": "/aliLamiry-portfolio/static/media/Amiamie-Light.9763c649d6c7a2e6ba12.otf",
+    "static/media/Amiamie-Italic.otf": "/aliLamiry-portfolio/static/media/Amiamie-Italic.c4bf7f5ff2ed773d0f3a.otf",
+    "static/media/shop_,mobile.webp": "/aliLamiry-portfolio/static/media/shop_,mobile.88f53e79c1e78c2ae2a5.webp",
+    "static/media/dash_mobile.webp": "/aliLamiry-portfolio/static/media/dash_mobile.76a0edfd2dab05de98f9.webp",
+    "index.html": "/aliLamiry-portfolio/index.html",
+    "main.416586ac.css.map": "/aliLamiry-portfolio/static/css/main.416586ac.css.map",
+    "main.0db5d1e5.js.map": "/aliLamiry-portfolio/static/js/main.0db5d1e5.js.map",
+    "453.5d79306b.chunk.js.map": "/aliLamiry-portfolio/static/js/453.5d79306b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.416586ac.css",
+    "static/js/main.0db5d1e5.js"
+  ]
+}
