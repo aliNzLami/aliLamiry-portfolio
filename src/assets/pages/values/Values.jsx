@@ -1,26 +1,10 @@
 import React, { useRef } from 'react'
 import ValuesItems from './ValuesItems';
-import { useGSAP } from '@gsap/react';
-import gsap from 'gsap';
 
 function Values() {
-    const containerRef = useRef(null); 
-    
-    useGSAP(() => {
-        gsap.to(containerRef.current, {
-            scrollTrigger: {
-                trigger: containerRef.current,
-                start: 'center center',
-                end: '+=800 center',
-                scrub: 0.5,
-                pin: true,
-                pinSpacing: true
-            }
-        })
-    }, [])
 
     return (
-        <div ref={containerRef} className='min-h-screen flex flex-col items-center justify-between gap-12 mt-16 valuesBg'>
+        <div className='min-h-screen flex flex-col items-center justify-between gap-12 mt-16 valuesBg'>
             <ValuesItems items={[
                 'Trust',
                 'Reselience',
