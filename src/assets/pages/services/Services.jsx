@@ -1,17 +1,22 @@
 import React, { useRef } from 'react'
-import GoldLine from './general/GoldLine';
+
+
+// components
+import GoldLine from '../../components/general/GoldLine';
+// gsap
+
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/all';
-gsap.registerPlugin(ScrollTrigger);
 
 function Services() {
 
+  // ---------------------- Ref ---------------------- //
   const title1_ref = useRef(null);
   const title2_ref = useRef(null);
   const title3_ref = useRef(null);
   const title4_ref = useRef(null);
 
+  // ---------------------- Animations ---------------------- //
   useGSAP(() => {
     if(title1_ref.current) {
       gsap.to(title1_ref.current, {
@@ -70,7 +75,7 @@ function Services() {
             Deployment
           </p>
         </div>
-        <div ref={title3_ref} className='flex items-center justify-center gap-3 translate-x-[-40%]'>
+        <div ref={title3_ref} className='flex items-center justify-center gap-3 translate-x-[-25%]'>
           <p>
             UI
           </p>

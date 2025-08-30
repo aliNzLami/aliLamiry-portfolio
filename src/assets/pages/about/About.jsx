@@ -1,23 +1,31 @@
 import React, { useRef } from 'react'
 
-import pic from "../pics/me.png"
+// pic
+import pic from "../../pics/me.png"
 
-import HeaderTextAnimated from './general/HeaderTextAnimated';
-import AnimatedTextLines from './general/AnimatedTextLines';
+// gsap
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 
+// components
+import HeaderTextAnimated from '../../components/general/HeaderTextAnimated';
+import AnimatedTextLines from '../../components/general/AnimatedTextLines';
+
+
 function About() {
 
+  // ---------------------- Ref ---------------------- //
     const picRef = useRef(null);
     const aboutRef = useRef(null);
 
+  // ---------------------- Variables ---------------------- //
     const aboutMe = `Since I was a kid, I have alwayed loved computer graphics, digital arts, and simulations. 
     I started my journey in tech with my bachelor's degree in FinTech major. I always knew I love tech, but here, I have just ensured myself.
     After carefully research, I understood that frontend development was the major where every aspects of my passions are connected together. And, it was true!
     I went to Tehran Institute of Technology. From HTML and CSS, to JavaScript and React.js. We were taught through real-time projects.
     Then, one year later, a startup company in software engineering hired me as a frontend developer. I delivered a veriety of products, including e-commerce, dashboards, landing pages, and custom software architectures.`;
 
+  // ---------------------- Animations ---------------------- //
     useGSAP(() => {
       if(picRef.current) {
         gsap.to(aboutRef.current, {
@@ -59,9 +67,7 @@ function About() {
           />
 
           <div className="flex flex-col items-center justify-between gap-16 px-18 pb-16 text-xl font-light tracking-wide lg:flex-row md:text-2xl lg:text-3xl text-white/60">
-
             <img className='w-md rounded-3xl' src={pic} alt="portfolio pic" ref={picRef} />
-
             <AnimatedTextLines 
               text={aboutMe}
             />

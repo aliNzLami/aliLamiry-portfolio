@@ -1,6 +1,6 @@
 import React from 'react'
-import RenderThree from './general/RenderThree';
-import HeaderTextAnimated from './general/HeaderTextAnimated';
+import RenderThree from '../../components/general/RenderThree';
+import HeaderTextAnimated from '../../components/general/HeaderTextAnimated';
 
 function Home() {
 

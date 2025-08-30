@@ -1,17 +1,21 @@
 import React from 'react';
-
+import ReactLenis from 'lenis/react';
 // css
 import './assets/css/main.css';
 
 // components
 import Navbar from './assets/components/Navbar';
-import Works from './assets/components/Works';
-import About from './assets/components/About';
-import Home from './assets/components/Home';
-import Services from './assets/components/Services';
-import Experience from './assets/components/Experience';
-import ReactLenis from 'lenis/react';
-import Skills from './assets/components/Skills';
+
+import Home from './assets/pages/home/Home';
+import Services from './assets/pages/services/Services';
+import About from './assets/pages/about/About';
+import Skills from './assets/pages/skills/Skills';
+import Experience from './assets/pages/experiences/Experience';
+import Works from './assets/pages/works/Works';
+
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/all';
+gsap.registerPlugin(ScrollTrigger)
 
 function App() {
     const navsList = [
@@ -21,24 +25,22 @@ function App() {
         { title: 'skills', component: <Skills /> },
         { title: 'experiences', component: <Experience /> },
         { title: 'works', component: <Works /> },
-        // { title: 'contact', component: <Works /> },
-      ]
+    ]
     
     return (
       <>
-      
-      <ReactLenis className='relative w-screen min-h-screen'>
-        <Navbar navsList={navsList} />
-        {
-          navsList.map(item => {
-            return (
-              <section key={item.title} id={item.title}>
-                { item.component }
-              </section>
-            )
-          })
-        }
-      </ReactLenis>
+        <ReactLenis root className='relative w-screen min-h-screen'>
+          <Navbar navsList={navsList} />
+          {
+            navsList.map(item => {
+              return (
+                <section key={item.title} id={item.title}>
+                  { item.component }
+                </section>
+              )
+            })
+          }
+        </ReactLenis>
       </>
     )
 }

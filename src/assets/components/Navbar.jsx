@@ -1,7 +1,9 @@
-import { useGSAP } from '@gsap/react';
-import gsap from 'gsap';
 import React, { useRef, useState } from 'react'
 import { Link } from 'react-scroll';
+
+// gsap
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 
 function Navbar({navsList}) {
 
