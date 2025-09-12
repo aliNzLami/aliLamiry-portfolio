@@ -1,4 +1,5 @@
 import React, { useRef } from 'react'
+import { useMediaQuery } from 'react-responsive'
 
 // gsap
 import gsap from 'gsap'
@@ -14,8 +15,12 @@ import ExperienceInfo from './ExperienceInfo'
 function Experience() {
 
     const experiencesRef = useRef([]);
+    const isDesktop = useMediaQuery({minWidth: '768px'});
+    
 
     useGSAP(() => {
+        if(!isDesktop) return;
+        
         if(experiencesRef.current.length) {
             experiencesRef.current.forEach((element, index) => {
                 gsap.to(element, {

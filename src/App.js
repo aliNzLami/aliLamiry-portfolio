@@ -1,8 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ReactLenis from 'lenis/react';
-
-// three
-import { useProgress } from '@react-three/drei';
 
 // css
 import './assets/css/main.css';
@@ -27,7 +24,8 @@ gsap.registerPlugin(ScrollTrigger)
 
 
 function App() {
-    const { progress } = useProgress();
+    const [progress, setProgress] = useState(0);
+
     const navsList = [
         { title: 'home', component: <Home /> },
         { title: 'services', component: <Services /> },
@@ -39,9 +37,23 @@ function App() {
         { title: 'contact', component: <Contact /> },
     ]
 
-    console.log(progress === 100);
+    useEffect(() => {
+      if (progress >= 100) return;
+  
+      const interval = setInterval(() => {
+        setProgress(prev => {
+          const newProgress = prev + 10;
+          if (newProgress >= 100) {
+            clearInterval(interval);
+            return 100;
+          }
+          return newProgress;
+        });
+      }, 500); // adjust delay as needed
+  
+      return () => clearInterval(interval);
+    }, [progress]);
     
-
     return (
       <>
         <ReactLenis root className='relative w-screen min-h-screen'>
