@@ -2,7 +2,7 @@ import React from 'react'
 import HeaderTextAnimated from '../../components/general/HeaderTextAnimated';
 import { useMediaQuery } from 'react-responsive';
 import headerMobile from '../../pics/header-mobile.jpg';
-import headerDesktop from '../../pics/header-desktop.jpg';
+import headerDesktop from '../../pics/headerDesktop.mp4';
 
 function Home() {
 
@@ -18,7 +18,21 @@ function Home() {
 
           <figure className=''>
               <div className='headerImgHolder'>
-                <img src={isMobile ? headerMobile : headerDesktop} alt="y2k header" />
+                {
+
+                  isMobile 
+                    ?  
+                      <img src={headerMobile} alt="y2k header" />
+                    : 
+                      <video
+                        controls={false} 
+                        autoplay='autoplay'
+                        muted={true} 
+                        loop={true}
+                      >
+                        <source type='video/mp4' src={headerDesktop} />
+                      </video>
+                }
               </div>
           </figure>
         
