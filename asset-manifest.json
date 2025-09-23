@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/aliLamiry-portfolio/static/css/main.3edafb77.css",
-    "main.js": "/aliLamiry-portfolio/static/js/main.124c148f.js",
+    "main.js": "/aliLamiry-portfolio/static/js/main.8f298e68.js",
     "static/js/453.ad7768ec.chunk.js": "/aliLamiry-portfolio/static/js/453.ad7768ec.chunk.js",
     "static/media/headerDesktop.mp4": "/aliLamiry-portfolio/static/media/headerDesktop.0de546c300d2a0b561ea.mp4",
     "static/media/me.png": "/aliLamiry-portfolio/static/media/me.dfb63ae1bf9d02984c0d.png",
@@ -16,6 +16,7 @@
     "static/media/Amiamie-LightItalic.ttf": "/aliLamiry-portfolio/static/media/Amiamie-LightItalic.97ec7df076d531a7ade0.ttf",
     "static/media/Amiamie-Regular.ttf": "/aliLamiry-portfolio/static/media/Amiamie-Regular.d2c5614a013de44fead4.ttf",
     "static/media/Amiamie-Light.ttf": "/aliLamiry-portfolio/static/media/Amiamie-Light.0331481efa3c56877c15.ttf",
+    "static/media/blog.webp": "/aliLamiry-portfolio/static/media/blog.f2e145360e4b30b3f122.webp",
     "static/media/note.webp": "/aliLamiry-portfolio/static/media/note.7060bec67bc4c6902718.webp",
     "static/media/Amiamie-BlackItalicRound.otf": "/aliLamiry-portfolio/static/media/Amiamie-BlackItalicRound.7a7a4ef6aabbbd754387.otf",
     "static/media/Amiamie-BlackRound.otf": "/aliLamiry-portfolio/static/media/Amiamie-BlackRound.c6624ca22ff54cab074a.otf",
@@ -30,13 +31,14 @@
     "static/media/Amiamie-Italic.otf": "/aliLamiry-portfolio/static/media/Amiamie-Italic.c4bf7f5ff2ed773d0f3a.otf",
     "static/media/shop_,mobile.webp": "/aliLamiry-portfolio/static/media/shop_,mobile.88f53e79c1e78c2ae2a5.webp",
     "static/media/dash_mobile.webp": "/aliLamiry-portfolio/static/media/dash_mobile.76a0edfd2dab05de98f9.webp",
+    "static/media/blog_mobile.webp": "/aliLamiry-portfolio/static/media/blog_mobile.5faf2d085fa27d01d59f.webp",
     "index.html": "/aliLamiry-portfolio/index.html",
     "main.3edafb77.css.map": "/aliLamiry-portfolio/static/css/main.3edafb77.css.map",
-    "main.124c148f.js.map": "/aliLamiry-portfolio/static/js/main.124c148f.js.map",
+    "main.8f298e68.js.map": "/aliLamiry-portfolio/static/js/main.8f298e68.js.map",
     "453.ad7768ec.chunk.js.map": "/aliLamiry-portfolio/static/js/453.ad7768ec.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3edafb77.css",
-    "static/js/main.124c148f.js"
+    "static/js/main.8f298e68.js"
   ]
 }
