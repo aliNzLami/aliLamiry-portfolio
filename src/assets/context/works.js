@@ -4,6 +4,8 @@ import shop from '../pics/shop.webp';
 import shop_mobile from '../pics/shop_,mobile.webp'
 import note from '../pics/note.webp';
 import note_mobile from '../pics/note_mobile.webp';
+import blog from '../pics/blog.webp';
+import blog_mobile from '../pics/blog_mobile.webp';
 
 export const worksList = [
     {
@@ -32,5 +34,14 @@ export const worksList = [
         live: "https://alinzlami.github.io/dreamNote/",
         pic: note,
         mobile_pic: note_mobile,
+    },
+    {
+        title: "Personal Blog",
+        description: 'In this blog, I share interesting things that I learn during my frontend career.',
+        stack: "React, Vite, Netlify, GSAP",
+        github: "https://github.com/aliNzLami/frontend_blog",
+        live: "https://ali-frontend-blog.netlify.app/",
+        pic: blog,
+        mobile_pic: blog_mobile,
     },
 ]

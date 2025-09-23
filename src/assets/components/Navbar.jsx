@@ -21,6 +21,7 @@ function Navbar({navsList}) {
     const socialList = [
         { title: 'E-mail', link: 'mailto: ali.nabizadeh79@yahoo.com' },
         { title: 'GitHub', link: 'https://github.com/aliNzLami'},
+        { title: 'Blog', link: 'https://ali-frontend-blog.netlify.app/'},
     ]
 
     const [isOpen, setIsOpen] = useState(false);
