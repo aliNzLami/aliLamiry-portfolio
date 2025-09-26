@@ -13,9 +13,12 @@ function ExperienceInfo({item}) {
                         { item.date }
                     </span>
                 </h2>
-                <h3 className='text-center md:text-start pt-0 text-xl md:text-2xl lg:text-3xl'>
-                    { item.company }
-                </h3>
+                <div className='flex items-center'>
+                    <h3 className='text-center md:text-start pt-0 text-xl md:text-2xl lg:text-3xl'>
+                        { item.company }
+                    </h3>
+                    <img className='w-[40px] rounded ms-4' src={item.logo} alt={`${item.company} company logo`} />
+                </div>
                 <p>
                     {
                         item.experiences.map((work, workIndex) => {

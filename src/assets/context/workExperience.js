@@ -1,7 +1,11 @@
+import akam from '../pics/akam.jpg';
+import mft from '../pics/mft.jpg';
+
 export const workExperience = [
     {
         title: 'Web Design Bootcamp',
         company: 'Tehran Institute of Technology',
+        logo: mft,
         date: 'Jun / 2021 - Jul / 2022',
         experiences: [
             "▪ Decreased client-side errors over 70% and empowered startups to deploy new features faster by engineering dynamic, object-oriented JavaScript modules and AJAXdriven features.",
@@ -13,7 +17,8 @@ export const workExperience = [
 
     {
         title: 'Front - End Developer',
-        company: 'Akam Cando',
+        company: 'Akam',
+        logo: akam,
         date: 'Sep 2022 - Present',
         experiences: [
             "▪ Served over 30,000 daily active users by developing TypeScript React.js and Next.js web applications, including e-commerce, financial dashboard panels, and offline-first web services.",
