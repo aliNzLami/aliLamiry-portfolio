@@ -18,21 +18,14 @@ function Home() {
 
           <figure className=''>
               <div className='headerImgHolder'>
-                {
-
-                  isMobile 
-                    ?  
-                      <img src={headerMobile} alt="y2k header" />
-                    : 
-                      <video
-                        controls={false} 
-                        autoplay='autoplay'
-                        muted={true} 
-                        loop={true}
-                      >
-                        <source type='video/mp4' src={headerDesktop} />
-                      </video>
-                }
+                  <video
+                    controls={false} 
+                    autoplay='autoplay'
+                    muted={true} 
+                    loop={true}
+                  >
+                    <source type='video/mp4' src={headerDesktop} />
+                  </video>
               </div>
           </figure>
         
